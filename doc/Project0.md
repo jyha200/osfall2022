@@ -90,7 +90,7 @@ or
 sudo apt-get install qemu-system-aarch64
 ```
 * download the script and config file from this link
-https://github.com/jyha/osfall2022/tree/main/src
+https://github.com/jyha/osfall2022/tree/master/src
 * Move `qemu.sh` to the Tizen kernel directory `(ex. /home/dcslab/osfall2020-team1/)`
 * Create a directory called `tizen-image` where the Tizen kernel directory is located `(ex. /home/dcslab/)`
 * Replace the existing `arch/arm64/configs/tizen_bcmrpi3_defconfig file` with downloaded file (back up the existing file)
