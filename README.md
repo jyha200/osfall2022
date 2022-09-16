@@ -1,4 +1,4 @@
-# Operating Systems Fall 2021
+# Operating Systems Fall 2022
 
 ## Announcements
 * Please write your full name within your Github profile.
