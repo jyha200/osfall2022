@@ -111,7 +111,9 @@ arm-linux-gnueabi-gcc -I<your kernel path>/include test.c -o test
 ### Running test program
 
 ```bash
+insmod /root/ptree_mod.ko
 /root/test
+rmmod ptree_mod.ko
 ```
 
 (Switch to root if `Permission denied` error occurs.)
