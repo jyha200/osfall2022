@@ -1,6 +1,6 @@
 # Project 1
 
-* Assigned: 2022-09-22
+* Assigned: 2022-09-23
 * **Due: 2022-10-08 Sat 23:59:59 KST**
 * Help document: [doc](https://github.com/jyha200/osfall2022/blob/master/presentations/2022%20OS%20FALL%20Project1%20Help%20Document.pdf)
 
