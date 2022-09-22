@@ -10,7 +10,7 @@ This assignment includes implementing a new system call in Linux. It returns the
 
 This is a team project. Each team will have access to its own GitHub repository (e.g. `[githubID of one member]/osfall2022-team1`) for collaboration and submission. Your final code and `README.md` document have to be committed into the _proj1_ branch for submission. Start from [kernel source](https://github.com/jyha200/tizen-5.0-rpi3/tree/project1_base) and make incremental changes to get things done.
 
-## 1. Writing `ptree` System Call 
+## 1. Writing `ptree` System Call as a kernel module
 
 The system call you write should take two arguments and return the process tree information in a depth-first-search order.
 
@@ -61,6 +61,8 @@ read_unlock(&tasklist_lock);
 ```
 
 All your implementation should be included in kernel/ptree_mod.c
+When the kernel module is inserted, target syscall table (compat_sys_call_table) entry should be replaced to your own syscall.
+When the kernel module is removed, target syscall table should be revert to the value before module insertion
 
 ## 2. Test your new system call 
 
@@ -70,6 +72,15 @@ printf("%s,%d,%lld,%d,%d,%d,%lld\n", p.comm, p.pid, p.state,
   p.parent_pid, p.first_child_pid, p.next_sibling_pid, p.uid);
 ```
 
+Your system call can be called after insert ptree_mod.ko
+For inserting module in the tizen shell,
+```bash
+insmod ./ptree_mod.ko
+```
+After test, module can be removed,
+```bash
+rmmod ptree_mod.ko
+```
 You can invoke `ptree` system call using `syscall` function. (See [here](https://linux.die.net/man/2/syscall) for details.)
 
 ### Example program output
