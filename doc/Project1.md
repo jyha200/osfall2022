@@ -31,7 +31,7 @@ struct prinfo {
   char    comm[64];         /* name of program executed */
 };
 ```
-in `include/linux/prinfo.h` as part of your solution.
+in `kernel/ptree_mod.c` as part of your solution.
 
 The argument `buf` points to a buffer for the process data, and `nr` points to the size of this buffer (number of `struct prinfo` entries). The system call copies at most that many entries to the buffer in pre-order and stores the number of entries actually copied to variable pointed by `nr`.
 
