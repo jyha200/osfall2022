@@ -1,7 +1,7 @@
 # Project 2: Weighted Round-Robin Scheduler
 
 * Assigned: 2022-10-14 Friday 
-* **Due: 2020-11-06  Saturday 23:59:59 KST**
+* **Due: 2020-11-05  Saturday 23:59:59 KST**
 
 This is the hardest project yet to come, some people might not finish on time so please start early :)
 * Please use the [Help Document for Project 2](https://github.com/jyha200/osfall2022/blob/master/presentations/2022%20OS%20FALL%20Project2%20Help%20Document.pdf) as reference 
